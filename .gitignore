@@ -1,0 +1,6 @@
+*.pyc
+__pycache__/
+.pytest_cache/
+node_modules/
+deploy_key
+deploy_key.pub
