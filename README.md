@@ -81,16 +81,16 @@ social-metrics-assessment/
 ## Running Tests
 
 ```bash
-# All tests
-pytest
-
-# Individual challenges
-pytest challenge-01/
-pytest challenge-02/
-pytest challenge-03/
-pytest challenge-04/
-pytest challenge-05/
-pytest challenge-06/
+make test          # Run all 149 tests (quiet output)
+make test-verbose  # Run all tests with verbose output
+make test-01       # Challenge 01 only (reconciliation engine)
+make test-02       # Challenge 02 only (schema design)
+make test-03       # Challenge 03 only (queue worker)
+make test-04       # Challenge 04 only (ADB automation)
+make test-05       # Challenge 05 only (device compliance)
+make test-06       # Challenge 06 only (fleet orchestrator)
+make test-coverage # Run with coverage report
+make clean         # Remove __pycache__ and .pytest_cache
 ```
 
 ---
